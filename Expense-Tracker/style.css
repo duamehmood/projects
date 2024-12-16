@@ -1,0 +1,271 @@
+ /* import font family is == Inter ==*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+blockquote,
+pre,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* =====  01. Reset  ====== */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    line-height: 1;
+    background-color:#dbe0e2;;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+}
+
+input:focus,
+button:focus {
+    outline: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    background-color: #ffffff;
+    -webkit-text-fill-color: #7B7B7B;
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+
+select::-ms-expand {
+    display: none;
+}
+
+label {
+    font-weight: normal;
+}
+
+iframe {
+    width: 100%;
+}
+
+.container {
+    overflow-y: visible !important;
+}
+
+/* =====  End of 01. Reset  ====== */
+/* ===== 02. Global Style ===== */
+
+
+ 
+h2 {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 50px;
+    font-family: "Inter", sans-serif;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27px;
+    font-family: "Inter", sans-serif;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 23px;
+    font-family: "Inter", sans-serif;
+
+}
+
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    font-family: "Inter", sans-serif;
+} 
+
+/* ===== End of 02. Global Style ===== */
+
+.expense-tracker .d-flex{
+    width: max-content;
+    background-color: #09adee;
+    border-radius: 12px;
+    column-gap: 16px;
+
+}
+
+.expense-tracker .d-flex h3{
+    background-color:#88d4f3;
+    border-radius: 10px;
+
+}
+
+.expense-tracker .m-0{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.1);
+}
+
+.expense-tracker input{
+    border-radius: 6px;
+    border: 2px solid black;
+}
+
+.expense-tracker button{
+    border-radius: 6px;
+    border: none;
+    background-color: #09adee;
+    color: #FFFFFF;
+}
+
+button:hover{
+    background-color: #88d4f3;
+    color: black;
+}
+
+ .expense-tracker .income{
+    background-color: #ffffff;
+    border-radius: 10px;
+    border-left: 5px solid green;
+
+ }
+
+ .expense-tracker .expense{
+    background-color:#ffffff;
+    border-radius: 10px;
+    border-left: 5px solid red;
+
+ }
+
+  
+  
+
+
+
+
+ 

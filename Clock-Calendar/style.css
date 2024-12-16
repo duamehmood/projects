@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(143, 90, 51);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.clock-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #512e0b;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.clock {
+    font-size: 5rem;
+    font-weight: bold;
+    display: flex;
+    gap: 0.5rem;
+}
+
+#ampm {
+    font-size: 2rem;
+    vertical-align: top;
+    margin-left: 10px;
+    opacity: 0.8;
+}
+
+.calendar {
+    width: 90%;
+    max-width: 600px;
+    background: #d8d5d4;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4d3632;
+    color: #fff;
+    padding: 20px;
+}
+
+.calendar-header .month {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.calendar-header .nav {
+    display: flex;
+    gap: 10px;
+}
+
+.calendar-header .nav button {
+    background: #795548;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.calendar-header .nav button:hover {
+    background: #5d4037;
+}
+
+.calendar-body {
+    padding: 20px;
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    font-weight: 700;
+    color: #7b2506;
+    margin-bottom: 10px;
+}
+
+.calendar-dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    gap: 10px;
+}
+
+.calendar-dates div {
+    padding: 15px;
+    background: #6d4c41;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.calendar-dates div:hover {
+    background: #5d4037;
+    color: #ffffff;
+}
+
+.calendar-dates .today {
+    background: #3e2723;
+    color: #ffffff;
+    font-weight: 700;
+}
