@@ -1,82 +1,122 @@
+
+
 const dates = document.getElementById('dates');
 const previous = document.getElementById('previous');
 const next = document.getElementById('next');
+const yearDrop = document.getElementById('yearDrop');
+const monthDrop = document.getElementById('monthDrop');
 const currentDateDisplay = document.getElementById('current-date');
-const monthDisplay = document.querySelector('.month');
 
-const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+const months = [
+    'January', 'February', 'March', 'April', 'May', 'June',
+    'July', 'August', 'September', 'October', 'November', 'December'
+];
 
 let currentMonth = new Date().getMonth();
 let currentYear = new Date().getFullYear();
 
 function generateCalendar(month, year) {
-    const firstDay = new Date(year, month, 1).getDay(); 
+    const firstDay = new Date(year, month, 1).getDay();
+    const lastDay = new Date(year, month + 1, 0).getDate();
 
-    const lastDay = new Date(year, month + 1, 0).getDate(); 
-
-    dates.innerHTML = ''; 
+    dates.innerHTML = '';
 
     const today = new Date();
-        const formattedDate = `${months[month]} ${year}  (Today-
-        ${today.getDate()})
-       `;
-        currentDateDisplay.textContent = formattedDate;
-    
-    let count = 0;
-    while (count < firstDay) {
+    currentDateDisplay.textContent = `${months[month]} ${year}`;
+
+
+    for (let i = 0; i < firstDay; i++) {
         const emptyCell = document.createElement('div');
         dates.appendChild(emptyCell);
-        count++;
     }
 
-    
-    let day = 1;
-    while (day <= lastDay) {
+
+    for (let day = 1; day <= lastDay; day++) {
         const dateCell = document.createElement('div');
         dateCell.textContent = day;
 
-        
-        if (day === new Date().getDate() && month === new Date().getMonth() && year === new Date().getFullYear()) {
+        if (
+            day === today.getDate() &&
+            month === today.getMonth() &&
+            year === today.getFullYear()
+        ) {
             dateCell.classList.add('today');
         }
 
         dates.appendChild(dateCell);
-        day++;
     }
 }
 
 function toPreviousMonth() {
     currentMonth--;
     if (currentMonth < 0) {
-        currentMonth = 11;  
+        currentMonth = 11;
         currentYear--;
+        updateYearDrop();
     }
+    updateMonthDrop();
     generateCalendar(currentMonth, currentYear);
 }
 
 function toNextMonth() {
     currentMonth++;
     if (currentMonth > 11) {
-        currentMonth = 0;  
+        currentMonth = 0;
         currentYear++;
+        updateYearDrop();
     }
+    updateMonthDrop();
     generateCalendar(currentMonth, currentYear);
 }
+
+function yearDropdown() {
+    const startYear = 1950;
+    const endYear = 2050;
+
+    for (let year = startYear; year <= endYear; year++) {
+        const opt = document.createElement('option');
+        opt.value = year;
+        opt.textContent = year;
+        yearDrop.appendChild(opt);
+    }
+    yearDrop.value = currentYear;
+}
+
+
+function monthDropdown() {
+
+    for (let i = 0; i < months.length; i++) {
+        const opt = document.createElement('option');
+        opt.value = i;
+        opt.textContent = months[i];
+        monthDrop.appendChild(opt);
+    }
+    monthDrop.value = currentMonth;
+}
+
+function updateYearDrop() {
+    yearDrop.value = currentYear;
+}
+
+function updateMonthDrop() {
+    monthDrop.value = currentMonth;
+}
+
+yearDrop.addEventListener('change', () => {
+    currentYear = parseInt(yearDrop.value, 10);
+    generateCalendar(currentMonth, currentYear);
+});
+
+monthDrop.addEventListener('change', () => {
+    currentMonth = parseInt(monthDrop.value, 10);
+    generateCalendar(currentMonth, currentYear);
+});
+
 
 previous.addEventListener('click', toPreviousMonth);
 next.addEventListener('click', toNextMonth);
 
 
-
+yearDropdown();
+monthDropdown();
 generateCalendar(currentMonth, currentYear);
-
-// for(var i=1950;i<=2050;i++){
-//     const opt = document.createElement('option');
-//     opt.innerText = i
-//     opt.value  = i
-//     year.appendChild(opt);
-// }
-
-
-
- 

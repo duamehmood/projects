@@ -1,7 +1,4 @@
- 
-
-
- * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,7 +12,6 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    
 }
 
 .calendar {
@@ -62,6 +58,38 @@ body {
     color: #ffffff;
 }
 
+.calendar-header label {
+    margin-right: 5px;
+    /* Minimized space between label and select */
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.calendar-header select {
+    background-color: #ffffff;
+    color: #388e3c;
+    border: 2px solid #2e7d32;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s, border-color 0.3s;
+    margin: 0;
+    /* Removed default margin to reduce space */
+}
+
+.calendar-header select:hover {
+    background-color: #2e7d32;
+    color: #ffffff;
+    border-color: #388e3c;
+}
+
+.calendar-header select:focus {
+    outline: none;
+    border-color: #1b5e20;
+    box-shadow: 0 0 5px #1b5e20;
+}
+
 .calendar-body {
     padding: 20px;
 }
@@ -100,8 +128,3 @@ body {
     color: #ffffff;
     font-weight: 700;
 }
-
-
-
-
- 
