@@ -1,0 +1,83 @@
+ 
+ <!DOCTYPE html>
+ <html lang="en">
+ 
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Fruityvice - Explore Delicious Fruits!</title>
+     <!-- CSS style sheet -->
+     <link rel="stylesheet" href="style.css">
+ 
+ </head>
+ 
+ <body>
+     <header>
+         <h1>🍎 Welcome to Fruityvice! 🍊</h1>
+         <p>Explore the world of fruits! Get nutritional insights and detailed information about different fruit species.
+         </p>
+     </header>
+ 
+     <main>
+         <div class="container">
+             <!-- Fiter type -->
+             <label for="filterType">Filter By:</label>
+             <select id="filterType" onchange="toggleFields()">
+                 <option value="all">All</option>
+                 <option value="name">Name</option>
+                 <option value="family">Family</option>
+                 <option value="genus">Genus</option>
+                 <option value="nutrition">Nutrition</option>
+             </select>
+ 
+             <!-- Inputfields -->
+             <input id="searchInput" type="text" placeholder="Enter Fruit name">
+ 
+             <!-- Nutrition Fields -->
+             <div id="nutritionFields">
+                 <label for="nutritionType">Select Nutrient:</label>
+                 <select id="nutritionType">
+                     <option value="carbohydrates">Carbohydrates</option>
+                     <option value="fat">Fat</option>
+                     <option value="protein">Protein</option>
+                     <option value="calories">Calories</option>
+                     <option value="sugar">Sugar</option>
+                 </select>
+                 <input type="number" id="minValue" placeholder="Min grams (e.g. 5)">
+                 <input type="number" id="maxValue" placeholder="Max grams (e.g. 20)">
+             </div>
+ 
+             <button id="fetchBtn" onclick="fetchFruitData()">Fetch Fruit Details</button>
+         </div>
+ 
+         <!-- Display Data -->
+         <div id="fruitData"></div>
+     </main>
+ 
+ 
+     <footer>
+         <div class="noteBox">
+             <p>
+                 If not working, please
+                 <a target="_blank" href="https://cors-anywhere.herokuapp.com/"
+                     style="color: rgb(14, 14, 236); text-decoration: underline;">
+                     click here
+                 </a>
+                 , to visit the site
+                 and request access to the demo server.
+             </p>
+         </div>
+        <div class="hello">Hello doraemon
+            <img src="image/doraemon.png" alt="doraemon">
+        </div>
+
+     </footer>
+ 
+ 
+ 
+   <!-- javascript  -->
+     <script src="script.js"></script>
+ 
+ </body>
+ 
+ </html>

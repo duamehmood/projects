@@ -1,0 +1,136 @@
+
+
+ /* ******--- FRUITY VICE--- ****** */
+
+ body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    background: #a4debf;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 42px;
+    font-weight: bold;
+    color: #008080;
+}
+
+p {
+    font-size: 18px;
+    font-weight: bold;
+    max-width: 600px;
+    margin: 30px auto 30px;
+    color: #9f4059;
+}
+
+.container {
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto 70px;
+    text-align: left;
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+    color: #008080;
+}
+
+select,
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+select:focus,
+input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #388E3C;
+}
+
+#nutritionFields {
+    display: none;
+}
+
+.fruit-card {
+    background: rgb(240, 219, 223);
+    padding: 10px 15px;
+    margin: 70px auto 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 300px;
+}
+
+.fruit-card h2 {
+    color: #008080;
+}
+
+.fruit-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.fruit-card li {
+    padding: 3px 0;
+    color: #a44141;
+}
+
+.noteBox {
+    width: 300px;
+    position: fixed;
+    bottom: 10%;
+    right: 0;
+    background-color: #f2f246;
+    border-top-left-radius: 70px;
+    border-bottom-left-radius: 70px;
+    padding: 5px 20px;
+    box-sizing: border-box;
+}
+
+.hello{
+    width: 100px;
+    height: 100px;
+    border-radius: 90px;
+    background-color: rgb(25, 157, 239);
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    padding: 8px;
+    font-size: 18px;
+    font-weight: bolder;
+    color: whitesmoke;
+    box-sizing: border-box;
+}
+
+img{
+    border-radius: 30px;
+}
