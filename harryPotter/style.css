@@ -15,11 +15,11 @@ header {
 h1 {
     font-size: 2.5em;
     text-shadow: 3px 3px 10px #A020F0;
-} 
+}
 
-h3{
+h3 {
     text-shadow: 3px 3px 10px #A020F0;
-    color: #d3a625 ;
+    color: #d3a625;
 }
 
 nav {
@@ -29,7 +29,9 @@ nav {
     border-radius: 10px;
 }
 
-select, input, button {
+select,
+input,
+button {
     font-size: 1.2em;
     margin: 10px;
     padding: 10px;
@@ -52,7 +54,3 @@ button:hover {
     border-radius: 10px;
     min-height: 200px;
 }
-
-
-
- 

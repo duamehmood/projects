@@ -17,7 +17,7 @@ function showFilterOptions() {
         document.getElementById('content').innerHTML = "<p>Fetching data...</p>";
     } else {
         filterOptions.style.display = 'none';
-        resetForm();  
+        resetForm();
     }
 }
 
@@ -40,19 +40,19 @@ function fetchData() {
     let filterType = document.getElementById('filterType').value;
 
     // Handle all characters
-     if (category === "characters" && filterType === 'all'){
+    if (category === "characters" && filterType === 'all') {
         url = `${proxy}${baseUrl}api/characters`;
-    } 
+    }
 
     // Handle specific Characters 
-   else if (category === "characters" && filterType === 'specific') {
-    let specificCharacter = document.getElementById('specificName').value.trim();
-    if (specificCharacter === "") {
-        alert("Please enter a character name");
-        return;
+    else if (category === "characters" && filterType === 'specific') {
+        let specificCharacter = document.getElementById('specificName').value.trim();
+        if (specificCharacter === "") {
+            alert("Please enter a character name");
+            return;
+        }
+        url = `${proxy}${baseUrl}api/characters/${specificCharacter}`;
     }
-    url = `${proxy}${baseUrl}api/characters/${specificCharacter}`;
-}
 
     // Handle specific houses
     else if (category === "houses" && filterType === 'specific') {
@@ -79,7 +79,7 @@ function fetchData() {
         url = `${proxy}${baseUrl}api/spells/${specificSpell}`;
         console.log("Fetching specific spell:", specificSpell);
     }
-     // Handle all spells
+    // Handle all spells
     else if (category === "spells" && filterType === "all") {
         url = `${proxy}${baseUrl}api/spells`;
     }
@@ -93,7 +93,7 @@ function fetchData() {
                 return;
             }
             url = `${proxy}${baseUrl}api/movies/${specificMovieId}`;
-        } 
+        }
         // Handle all movies
         else if (filterType === "all") {
             url = `${proxy}${baseUrl}api/movies`;
@@ -109,7 +109,7 @@ function fetchData() {
                 return;
             }
             url = `${proxy}${baseUrl}api/books/${specificBook}`;
-        } 
+        }
         // Handle all books
         else if (filterType === "all") {
             url = `${proxy}${baseUrl}api/books`;
@@ -144,14 +144,14 @@ function fetchData() {
                         character.name.toLowerCase() === specificCharacter.toLowerCase()
                     );
                     displayData(filteredCharacter, `Character: ${specificCharacter}`);
-                } 
+                }
                 // If data is a single object, display it directly
                 else if (typeof data === "object") {
                     displayData([data], `Character: ${data.name}`);
                 }
             }
 
-           // Handle Movies category and display either specific movie or all movies
+            // Handle Movies category and display either specific movie or all movies
             else if (category === "movies" && filterType === 'specific') {
                 displayData([data], `Movie: ${data.title}`);
             }
@@ -159,7 +159,6 @@ function fetchData() {
             // Handle Books category and filter specific book
             else if (category === "books" && filterType === "specific") {
                 displayData([data], `Book: ${data.title}`);
-
             }
 
             // Handle all categories
@@ -184,12 +183,12 @@ function displayData(data, category) {
             let card = createCard(item, category);
             container.appendChild(card);
         });
-    } 
+    }
     // Case 2: If `data` is a single object with a name/title (character, book, movie)
     else if (typeof data === "object" && (data.name || data.title)) {
         let card = createCard(data, category);
         container.appendChild(card);
-    } 
+    }
     // Case 3: If `data` is empty or invalid
     else {
         content.innerHTML += "<p>No results found</p>";

@@ -1,60 +1,60 @@
- 
- <!DOCTYPE html>
- <html lang="en">
- <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Potterhead API Explorer</title>
-     <link rel="stylesheet" href="style.css">
- </head>
- <body>
-     <header>
-         <h1>⚡ Potterhead API Explorer ⚡</h1>
-         <h3>Explore the magical world of Harry Potter !</h3>
-     </header>
-     
-     <nav>
-         <label for="category">Choose a category:</label>
-         <select id="category" onchange="showFilterOptions()">
-             <option value="select">Select</option>
-             <option value="characters">Characters</option>
-             <option value="houses">Houses</option>
-             <option value="spells">Spells</option>
-             <option value="movies">Movies</option>
-             <option value="books">Books</option>
-         </select>
-         
-         <div id="filterOptions" style="display:none;">
-            
-             <label for="filterType">Filter by:</label>
-             <select id="filterType" onchange="showInputField()">
-                 <option value="all">All</option>
-                 <option value="specific">By Specific Name/Id</option>
-             </select>
-             
-             <div id="specificInput" style="display:none;">
-                 <input type="text" id="specificName" placeholder="Enter name">
-             </div>
-             
-             <button onclick="fetchData()">Fetch</button>
-         </div>
-     </nav>
-     
-     <main id="content">
-         <p>Select a category to explore.</p>
-     </main>
-     
-     <p>
-         If not working, please
-         <a target="_blank" href="https://cors-anywhere.herokuapp.com/"
-             style="color: blue; text-decoration: underline;">
-             click here
-         </a>
-         , to visit the site
-         and request access to the demo server.
-     </p>
- 
-     <script src="script.js"></script>
- </body>
- </html>
- 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potterhead API Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>⚡ Potterhead API Explorer ⚡</h1>
+        <h3>Explore the magical world of Harry Potter !</h3>
+    </header>
+
+    <nav>
+        <label for="category">Choose a category:</label>
+        <select id="category" onchange="showFilterOptions()">
+            <option value="select">Select</option>
+            <option value="characters">Characters</option>
+            <option value="houses">Houses</option>
+            <option value="spells">Spells</option>
+            <option value="movies">Movies</option>
+            <option value="books">Books</option>
+        </select>
+
+        <div id="filterOptions" style="display:none;">
+
+            <label for="filterType">Filter by:</label>
+            <select id="filterType" onchange="showInputField()">
+                <option value="all">All</option>
+                <option value="specific">By Specific Name/Id</option>
+            </select>
+
+            <div id="specificInput" style="display:none;">
+                <input type="text" id="specificName" placeholder="Enter name">
+            </div>
+
+            <button onclick="fetchData()">Fetch</button>
+        </div>
+    </nav>
+
+    <main id="content">
+        <p>Select a category to explore.</p>
+    </main>
+
+    <p>
+        If not working, please
+        <a target="_blank" href="https://cors-anywhere.herokuapp.com/" style="color: blue; text-decoration: underline;">
+            click here
+        </a>
+        , to visit the site
+        and request access to the demo server.
+    </p>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
