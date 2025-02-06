@@ -1,4 +1,6 @@
+  
 
+  
 
 // ******--- FRUITY VICE--- ******
 
@@ -144,6 +146,3 @@ window.onload = function () {
     document.getElementById("filterType").value = "all";
     toggleFields();
 };
-
-
-
