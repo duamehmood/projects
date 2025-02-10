@@ -203,9 +203,9 @@ function createCard(item, category) {
         return createHouseCard(item);
     } else if (category.toLowerCase().includes("spells")) {
         return createSpellCard(item);
-    } else if (category.toLowerCase().includes("movies")) {
+    } else if (category.toLowerCase().includes("movie")) {
         return createMovieCard(item);
-    } else if (category.toLowerCase().includes("books")) {
+    } else if (category.toLowerCase().includes("book")) {
         return createBookCard(item);
     } else {
         return createCharacterCard(item); // Default to character card
