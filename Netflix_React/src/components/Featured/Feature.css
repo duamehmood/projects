@@ -1,0 +1,67 @@
+ 
+
+.featured{
+    position: relative;
+
+}
+
+.featured img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.category{
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    font-weight:500;
+    font-size: 30px;
+    color: white;
+}
+
+select{
+    border: 1px solid white;
+    background-color:var(--main-color);
+    cursor: pointer;
+    color: white;
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    padding: 5px;
+    margin-left: 20px !important;
+}
+
+  
+
+ .info{
+    width: 35%;
+    position:absolute;
+    left: 50px;
+    bottom: 150px;
+    color: white;
+}
+
+.info img{
+    width: 400px;
+     
+}
+
+.buttons button {
+    font-size:18px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.play{
+    background-color: white;
+    color: var(--main-color);
+}
+
+.more{
+    background-color: gray;
+    color: white;
+}
+
+ 

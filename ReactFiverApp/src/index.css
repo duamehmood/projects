@@ -1,0 +1,1041 @@
+/* ===== 01. Reset CSS ===== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "sans-serif";
+}
+
+/* ---------------------- */
+
+/* ------Navbar------ */
+
+.navbar {
+  background-color: #013914;
+  color: white;
+  transition: 0.3s all;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+
+}
+
+.navbar.active {
+  background-color: white;
+  color: black;
+}
+
+.navbar .box {
+  width: 100%;
+  padding: 15px 0;
+}
+
+.navbar .logo {
+  font-size: 34px;
+}
+
+.navbar .dot {
+  color: #1dbf73;
+}
+
+.navbar .user {
+  cursor: pointer;
+  position: relative;
+}
+
+.navbar .user img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.navbar .user .options {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  color: gray;
+  width: 200px;
+  font-weight: 300;
+  z-index: 1;
+}
+
+.navbar button {
+  color: white;
+  background-color: transparent;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.navbar button:hover {
+  background-color: #1dbf73;
+  border-color: #1dbf73;
+}
+
+.navbar hr {
+  width: 100%;
+  height: 0;
+  border: 0.5px solid lightgray;
+  margin: 0;
+}
+
+.navbar .menu {
+  width: 100%;
+  padding: 10px 0;
+  font-weight: 300;
+  color: gray;
+
+}
+
+.navbar .link {
+  color: inherit;
+}
+
+/* ------End of Navbar------  */
+
+/* ---------------------- */
+
+/*------ Features  Component------*/
+.features {
+  background-color: #013914;
+  color: white;
+}
+
+.features h1 {
+  font-size: 58px;
+  font-weight: 600;
+}
+
+.features h1 span {
+  font-size: 50px;
+  font-weight: 100;
+
+}
+
+.features .search {
+  padding: 20px 0px 30px 0px;
+
+}
+
+.features .input {
+  background-color: white;
+  border-radius: 6px 0 0 6px;
+  width: 100%;
+}
+
+.features .search-icon {
+  color: gray;
+  margin: 0px 10px;
+}
+
+.features input {
+  width: 90%;
+  padding: 10px 20px;
+  border: none;
+}
+
+.features .btn {
+  padding: 10px 40px;
+  font-size: 20px;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  background-color: #1dbf73;
+  color: white;
+}
+
+.features .btn:hover {
+  background-color: #1a9f66;
+}
+
+.features .popular {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.features .rounded-pill {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+.features .left {
+  padding: 100px 0;
+}
+
+.features img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/*------ End of Features Component------*/
+
+/* ---------------------- */
+
+/*------ Trusted Component ------*/
+.trusted {
+  background-color: #f8f8f8;
+  padding: 50px 0;
+}
+
+.trusted span {
+  font-size: 22px;
+  font-weight: 600;
+  color: lightgray;
+}
+
+.trusted img {
+  width: 70px;
+}
+
+.trusted .pg {
+  width: 50px;
+}
+
+.trusted .fb {
+  width: 100px;
+}
+
+/* ------End of Trusted Component------- */
+
+/* ---------------------- */
+
+/* ------ SlideCards Component ------*/
+
+.slide-cards {
+  width: 90%;
+  height: 345px;
+  color: #fff;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.slide-cards img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.slide-cards .desc {
+  font-weight: 300;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.slide-cards .title {
+  font-size: 24px;
+  font-weight: 500;
+  position: absolute;
+  top: 40px;
+  left: 15px;
+}
+
+/*------ End of SlideCards Component ------*/
+
+/* ---------------------- */
+
+/* ------ Slide Component ------*/
+
+.slide {
+  padding: 100px 0px;
+  position: relative;
+  display: flex;
+}
+
+.slide .box {
+  width: 100%;
+}
+
+.slick-arrow {
+  z-index: 2 !important;
+}
+
+.slide .left {
+  position: absolute;
+  left: 0px;
+  z-index: 2 !important;
+}
+
+.slide .right {
+  position: absolute;
+  right: 0px;
+  z-index: 1;
+}
+
+/*------ End of  Slide Component -------*/
+
+/* ---------------------- */
+
+/*------ ProductSlide Component ------*/
+
+.product-slide {
+  padding: 100px 0px;
+  position: relative;
+}
+
+.product-slide .box {
+  width: 100%;
+}
+
+.slick-arrow {
+  z-index: 2 !important;
+}
+
+.product-slide .left {
+  position: absolute;
+  left: 0px;
+  z-index: 2 !important;
+}
+
+.product-slide .right {
+  position: absolute;
+  right: 0px;
+  z-index: 1;
+
+}
+
+/*------- End of ProductSlide Component ------*/
+
+       /* ---------------------- */
+
+/*------- ProductCard Component ------*/
+
+.product-card {
+  width: 90%;
+  height: 300px;
+  color: black;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+  border: 1px solid lightgray;
+
+}
+
+.product-card img {
+  width: 100%;
+  height: 70%;
+  border-radius: 5px 5px 0 0;
+  object-fit: cover;
+}
+
+.product-card .user-info .pp {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.product-card h2 {
+  font-size: 18px;
+}
+
+.product-card span {
+  font-size: 14px;
+}
+
+/*------ End of ProductCard Component ------*/
+
+         /* ---------------------- */
+
+/*------- Freelance Component Component ------*/
+
+.freelance {
+  padding: 100px 0px;
+  background-color: #f1fdf7;
+}
+
+.freelance .left {
+  padding-right: 60px;
+}
+
+.freelance h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.freelance h4 {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(87, 86, 86);
+  margin: 0;
+}
+
+.freelance p {
+  font-size: 20px;
+  font-weight: 300;
+  color: gray;
+  letter-spacing: 0.5px;
+}
+
+/*------ End of Freelance Component Component ------*/
+
+        /* ---------------------- */
+
+/* ------ Marketplace Component ------*/
+
+.marketplace {
+  padding: 100px 0px;
+}
+
+.marketplace .box{
+  cursor: pointer;
+}
+
+.marketplace h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #555;
+}
+
+.marketplace img {
+  width: 50px;
+}
+
+.marketplace .line {
+  width: 50px;
+  height: 2px;
+  background-color: #d3d3d3;
+  transition: all 0.3s ease;
+}
+
+.marketplace .box:hover .line{
+  width: 80px;
+  background-color: #1dbf73;
+
+}
+
+.marketplace span {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+/* ------ End of Marketplace Component ------*/
+
+        /* ---------------------- */
+
+/*------ Bussiness Component ------*/
+
+.bussiness {
+  padding: 100px 0px;
+  background-color: #0d084d;
+  color: white;
+}
+
+.bussiness h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.bussiness h3 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.bussiness h5 {
+  font-size: 20px;
+  line-height: 30px;
+  padding-right: 80px;
+}
+
+.bussiness span {
+  font-size: 24;
+  font-weight: 100;
+}
+
+.bussiness p {
+  font-size: 16px;
+}
+
+.bussiness button {
+  background-color: #1dbf73;
+  border: none;
+  color: white;
+  font-size: 18px;
+}
+
+.bussiness button:hover {
+  background-color: #1a9f66;
+}
+
+.bussiness .left {
+  padding-right: 20px;
+}
+
+.bussiness .right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+/* ------End of Bussiness Component -------*/
+
+         /* ---------------------- */
+
+/*------- Footer Component-------*/
+
+.footer p {
+  font-size: 16px;
+  margin-bottom: 0;
+
+}
+
+.footer h3 {
+  color: #013914;
+  font-size: 30px;
+
+}
+
+.footer .icon {
+  color: #013914;
+}
+
+
+
+
+/*------- End of Footer Component -------*/
+
+/* ---------------------- */
+
+/* ------ MyGigs Page -------*/
+
+.my-gigs {
+  color: #555;
+}
+
+.my-gigs button {
+  background-color: #1dbf73;
+  color: white;
+  font-weight: 500;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.my-gigs button:hover {
+  background-color: #57c595;
+}
+
+.my-gigs h1 {
+  font-size: 34px;
+  font-weight: 600;
+}
+
+.my-gigs table {
+  width: 100%;
+}
+
+.my-gigs img {
+  width: 40px;
+  object-fit: cover;
+}
+
+.my-gigs .delete {
+  width: 20px;
+  cursor: pointer;
+}
+
+.my-gigs th {
+  padding: 20px 0;
+  font-size: 18px;
+}
+
+.my-gigs td {
+  padding: 10px 0;
+  font-size: 18px;
+}
+
+.my-gigs tr:nth-of-type(even) {
+  background-color: #f0fbf5;
+
+}
+
+/* ------End of MyGigs Page ------*/
+
+/* ---------------------- */
+
+/*------- Orders Page -------*/
+
+.orders {
+  color: #555;
+}
+
+.orders button {
+  background-color: #1dbf73;
+  color: white;
+  font-weight: 500;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.orders h1 {
+  font-size: 34px;
+  font-weight: 600;
+}
+
+.orders table {
+  width: 100%;
+}
+
+.orders img {
+  width: 40px;
+  object-fit: cover;
+}
+
+.orders .msg {
+  width: 30px;
+}
+
+.orders .delete {
+  width: 20px;
+  cursor: pointer;
+}
+
+.orders th {
+  padding: 20px 0;
+  font-size: 18px;
+}
+
+.orders td {
+  padding: 10px 0;
+  font-size: 18px;
+}
+
+.orders tr:nth-of-type(even) {
+  background-color: #f0fbf5;
+
+}
+
+/* ------End of Orders Page -------*/
+
+/* ---------------------- */
+
+/* ------- Messages Page -------*/
+
+.messages {
+  color: #000;
+}
+
+.messages button {
+  background-color: #1dbf73;
+  color: white;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  font-weight: 0;
+  font-size: 16px;
+}
+
+.messages h1 {
+  font-size: 34px;
+  font-weight: 600;
+}
+
+.messages table {
+  width: 100%;
+}
+
+.messages tr {
+  height: 100px;
+  border: 1px solid white;
+
+}
+
+.messages th {
+  padding: 20px 0;
+  font-size: 18px;
+}
+
+.messages td {
+  padding: 10px;
+  font-size: 18px;
+}
+
+.messages td:nth-child(1) {
+  font-weight: 600;
+}
+
+.messages td:nth-child(2),
+td:nth-child(3) {
+  color: gray;
+}
+
+.messages .active {
+  background-color: #f0fbf5;
+
+}
+
+.messages .link {
+  color: gray;
+}
+
+
+
+/* ------End of Messages Page------ */
+
+/* ---------------------- */
+
+/*------- Message Page -------*/
+
+.message .link {
+  color: purple;
+}
+
+.message .top-link {
+  font-weight: 300;
+  font-size: 15px;
+  color: #555;
+}
+
+.message img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.message .msgs {
+  height: 500px;
+  overflow: scroll;
+}
+
+.message .item {
+  max-width: 55%;
+  font-size: 18px;
+}
+
+.message p {
+  padding: 20px;
+  background-color: rgb(239, 238, 238);
+  border-radius: 0px 20px 20px 20px;
+  color: gray;
+}
+
+.message .item-owner {
+  max-width: 55%;
+  font-size: 18px;
+}
+
+.message .item-owner p {
+  padding: 20px;
+  background-color: rgb(239, 238, 238);
+  border-radius: 20px 0px 20px 20px;
+  color: white;
+  background-color: royalblue;
+}
+
+.message textarea {
+  width: 80%;
+  border-radius: 10px;
+  border: 1px solid lightgrey;
+  padding: 10px;
+}
+
+.message button {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: #1dbf73;
+  color: white;
+  font-weight: 500;
+}
+
+.message button:hover {
+  background-color: #1a9f66;
+}
+
+/* -------End of Message Page -------*/
+
+/* ---------------------- */
+
+/* -------Add New Gig Page -------*/
+
+.add h1 {
+  color: gray;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.add label {
+  color: gray;
+  font-size: 18px;
+}
+
+.add input,
+textarea,
+select {
+  padding: 20px;
+}
+
+.add button {
+  border: none;
+  background-color: #1dbf73;
+  color: white;
+  padding: 20px;
+  font-size: 18px;
+  cursor: pointer;
+  width: 50%;
+}
+
+.add button:hover {
+  background-color: #1a9f66;
+}
+
+/* -------- End of Add New Gig Page ------- */
+
+/* ---------------------- */
+
+/* ------- Gigs Page -------*/
+
+.gigs h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: black;
+
+}
+
+.gigs {
+  color: gray;
+}
+
+.gigs p {
+  color: gray;
+  font-size: 18px;
+}
+
+.gigs select {
+  border: none;
+  background: none;
+  font-weight: 600;
+  padding: 8px;
+}
+
+.gigs button {
+  padding: 3px 10px;
+  background-color: #1dbf73;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+.gigs input {
+  padding: 0 5px;
+}
+
+.gigs .profile {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.gigs span {
+  font-size: 18px;
+}
+
+.gigs .top {
+  font-size: 16px;
+}
+
+/* ------ GigCard Component ------*/
+
+
+.gig-cards .rating {
+  font-size: 18px;
+  color: #ffc108;
+
+}
+
+
+.gig-cards p {
+  font-size: 18px;
+  color: #111;
+  padding: 10px 0;
+  font-weight: 300;
+
+}
+
+.gig-cards {
+  border: 1px solid lightgray;
+  cursor: pointer;
+}
+
+.gig-cards .text-end {
+  font-size: 16px;
+}
+
+.gig-cards img {
+  object-fit: cover;
+}
+
+.gig-cards .cover-image{
+  aspect-ratio: 4/3;
+
+}
+
+.gig-cards .heart {
+  color: rgb(172, 169, 169);
+}
+
+.gig-cards hr {
+  color: gray;
+}
+
+/* ------- End of GigCards Component -------*/
+/* ------- End of Gigs Page -------*/
+
+/* ---------------------- */
+
+/* ------- Single Gig Page -------*/
+
+.gig .profile {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+
+}
+
+.gig .rating {
+  font-size: 18px;
+  color: #ffc108;
+
+}
+
+.gig h1{
+  font-size: 36px;
+  font-weight: 600;
+  color: black;
+
+}
+
+.gig h5{
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.gig h3{
+  font-size: 24px;
+}
+
+.gig h2{
+  font-size: 32px;
+}
+
+.gig .slick-arrow {
+  z-index: 2 !important;
+}
+
+
+.gig .left {
+  position: absolute;
+  left: 30px;
+  z-index: 2 !important;
+}
+
+.gig .right {
+  position: absolute;
+  right:30px ;
+  z-index: 1 !important;
+
+}
+
+.gig .image{
+  width: 85%;
+}
+
+.gig figure{
+  background-color: rgb(236, 235, 235);
+   
+}
+
+.gig p{
+  color: #555;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+.gig .seller img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.gig button{
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: transparent;
+  color: black;
+}
+
+.gig .box{
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.gig .m-0{
+  padding-right: 180px ;
+}
+
+.gig hr{
+  color: #555;
+}
+
+.gig .reviews-pp{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.gig .flag{
+  width: 20px;
+}
+
+.gig .right-side{
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.gig .right-side button{
+  width: 100%;
+  border: none;
+  background-color: #1dbf73;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.gig button:hover{
+  background-color: #1a9f66;
+}
+
+.gig .g-tick{
+   width: 20px;
+}
+
+.gig .right-side{
+  height: max-content;
+  top: 50px;
+}
+
+/* ------ End of Single Gig Page ------ */

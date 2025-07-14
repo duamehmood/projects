@@ -1,0 +1,692 @@
+   /* ------ 1.0 - Home Page ------ */
+   /* --- 1.1 - Features Hero Component --- */
+
+   @media screen and (max-width: 1399px) {
+
+       .features h1 {
+           font-size: 50px;
+           font-weight: 600;
+       }
+
+       .features h1 span {
+           font-size: 46px;
+           font-weight: 100;
+       }
+
+       .features .left {
+           padding: 110px 0;
+       }
+
+   }
+
+   @media screen and (max-width: 1199px) {
+
+       .features h1 {
+           font-size: 40px;
+       }
+
+       .features h1 span {
+           font-size: 36px;
+       }
+
+       .features input {
+           padding: 10px 25px;
+       }
+
+       .features .btn {
+           padding: 10px 40px;
+           font-size: 18px;
+       }
+
+       .features .rounded-pill {
+           padding: 3px 10px;
+           font-size: 14px;
+       }
+
+       .features .left {
+           padding: 80px 0;
+       }
+
+   }
+
+   @media screen and (max-width: 991px) {
+
+       .features h1 {
+           font-size: 34px;
+       }
+
+       .features h1 span {
+           font-size: 30px;
+       }
+
+       .features input {
+           width: 80%;
+           padding: 8px 25px;
+       }
+
+       .features .btn {
+           padding: 8px 30px;
+           font-size: 16px;
+       }
+
+       .features .left {
+           padding: 50px 0;
+       }
+
+   }
+
+   @media screen and (max-width: 767px) {
+
+
+       .features h1 {
+           font-size: 30px;
+       }
+
+       .features h1 span {
+           font-size: 26px;
+       }
+
+   }
+
+   @media screen and (max-width: 576px) {
+
+       .features h1 {
+           font-size: 28px;
+           text-align: center;
+       }
+
+       .features h1 span {
+           font-size: 26px;
+       }
+
+       .features .input {
+           width: 100%;
+           border-radius: 6px !important;
+       }
+
+       .features input {
+           width: 85%;
+           border-radius: 6px 6px 6px 6px !important;
+       }
+
+       .features .btn {
+           width: 100%;
+           margin-top: 10px;
+           border-radius: 6px 6px 6px 6px !important;
+       }
+
+       .features .left {
+           padding: 30px 0;
+       }
+
+   }
+
+   /* --- 1.1 - End of Feature Component --- */
+   /* ---------------------- */
+   /* --- 1.2 - Slide Component --- */
+
+   @media screen and (max-width: 991px) {
+
+       .slide {
+           padding: 50px 0px;
+       }
+
+   }
+
+   @media screen and (max-width: 767px) {
+
+       .slide .left {
+           left: 30px;
+       }
+
+       .slide .right {
+           right: 30px;
+       }
+
+   }
+
+   @media screen and (max-width: 576px) {
+
+       .slide {
+           padding: 30px 0px;
+       }
+   }
+
+   /* --- 1.2 - End of Slide Component --- */
+   /* ---------------------- */
+   /* --- 1.3 - SlideCard Component --- */
+
+   @media screen and (max-width: 767px) {
+       .slide-cards {
+           width: 100%;
+       }
+
+   }
+
+   /* --- 1.3 - End of SlideCard Component --- */
+   /* ---------------------- */
+   /* --- 1.4 - Freelance Component --- */
+
+   @media screen and (max-width: 1399px) {
+
+       .freelance .left {
+           padding-right: 10px;
+       }
+   }
+
+   @media screen and (max-width: 1199px) {
+
+       .freelance .left {
+           padding-right: auto;
+       }
+   }
+
+   @media screen and (max-width: 991px) {
+
+       .freelance h2 {
+           font-size: 30px;
+       }
+
+       .freelance h4 {
+           font-size: 18px;
+       }
+
+       .freelance p {
+           font-size: 18px;
+       }
+
+       .freelance {
+           padding: 50px 0px;
+       }
+
+   }
+
+   /* --- 1.4 - End of Freelance Component --- */
+   /* ---------------------- */
+   /* --- 1.5 - Marketplace Component --- */
+
+   @media screen and (max-width: 991px) {
+
+       .marketplace {
+           padding: 50px 0px;
+       }
+
+       .marketplace h2 {
+           font-size: 26px;
+       }
+
+   }
+
+   /* --- 1.5 - End of Marketplace Component --- */
+   /* ---------------------- */
+   /* --- 1.6 - Bussiness Component --- */
+
+   @media screen and (max-width: 1399px) {
+
+       .bussiness h5 {
+           padding-right: 10px;
+       }
+   }
+
+   @media screen and (max-width: 1199px) {
+
+       .bussiness .left {
+           padding-right: auto;
+       }
+
+       .bussiness h5 {
+           padding-right: 30px;
+       }
+   }
+
+   @media screen and (max-width: 991px) {
+
+       .bussiness {
+           padding: 50px 0px;
+       }
+
+       .bussiness h2 {
+           font-size: 28px;
+       }
+
+       .bussiness h3 {
+           font-size: 26px;
+       }
+
+       .bussiness h5 {
+           padding-right: 0px;
+           font-size: 18px;
+       }
+
+       .bussiness span {
+           font-size: 22;
+       }
+
+       .bussiness button {
+           font-size: 16px;
+       }
+
+   }
+
+   @media screen and (max-width: 576px) {
+
+       .bussiness button {
+           width: 100%;
+       }
+
+   }
+
+   /* --- 1.6 - End of Bussiness Component --- */
+   /* ---------------------- */
+   /* --- 1.7 - ProductSlide Component --- */
+
+   @media screen and (max-width: 991px) {
+
+       .product-slide {
+           padding: 50px 0px;
+       }
+
+   }
+
+   @media screen and (max-width: 767px) {
+
+       .product-slide .left {
+           left: 30px;
+       }
+
+       .product-slide .right {
+           right: 30px;
+       }
+
+   }
+
+   /* --- 1.7 - End of ProductSlide Component --- */
+   /* ---------------------- */
+   /* --- 1.8 - ProductCard Component --- */
+
+   @media screen and (max-width: 767px) {
+
+       .product-card {
+           width: 100%;
+       }
+
+   }
+
+   /* --- 1.8 - End of ProductCard Component --- */
+   /* ---------------------- */
+   /* --- 1.9 - Footer Component --- */
+
+   @media screen and (max-width: 991px) {
+
+       .footer h3 {
+           font-size: 28px;
+       }
+
+   }
+
+   @media screen and (max-width: 767px) {
+
+       .footer h3 {
+           font-size: 24px;
+       }
+
+   }
+
+   /* --- 1.9 - End of Footer Component --- */
+   /* ---------------------- */
+
+   /* ------ 1.0 - End of Home Page ------ */
+   /* ---------------------- */
+
+   /* ------ 2.0 - Gigs Page ------ */
+
+   @media screen and (max-width: 991px) {
+
+       .gigs h1 {
+           font-size: 32px;
+       }
+
+   }
+
+   @media screen and (max-width: 767px) {
+
+       .gigs p {
+           font-size: 16px;
+       }
+
+       .gigs span {
+           font-size: 16px;
+       }
+   }
+
+   /* ------ 2.0 - End of Gigs Page ------ */
+   /* ---------------------- */
+   /* ------ 3.0 - Gig Page ------ */
+
+   @media screen and (max-width: 991px) {
+
+       .gig h1 {
+           font-size: 32px;
+
+       }
+
+       .gig h2 {
+           font-size: 28px;
+       }
+
+       .gig h3 {
+           font-size: 22px;
+       }
+
+       .gig h5 {
+           font-size: 20px;
+       }
+   }
+
+   @media screen and (max-width: 767px) {
+
+       .gig .left {
+           left: 25px;
+       }
+
+       .gig .right {
+           right: 25px;
+
+       }
+
+       .gig .m-0 {
+           padding-right: 100px;
+       }
+
+       .gig h1 {
+           font-size: 30px;
+
+       }
+
+       .gig h2 {
+           font-size: 26px;
+       }
+
+       .gig .right-side button {
+           font-size: 16px;
+       }
+
+       .gig button {
+           padding: 5px;
+       }
+
+   }
+
+   @media screen and (max-width: 576px) {
+
+       .gig .left {
+           left: 20px;
+       }
+
+       .gig .right {
+           right: 20px;
+
+       }
+
+       .gig .m-0 {
+           padding-right: 50px;
+       }
+
+       .gig h1 {
+           font-size: 28px;
+
+       }
+
+       .gig h2 {
+           font-size: 24px;
+       }
+
+       .gig h3 {
+           font-size: 22px;
+       }
+
+       .gig h5 {
+           font-size: 18px;
+       }
+   }
+
+   @media screen and (max-width: 480px) {
+
+       .gig .m-0 {
+           padding-right: 0px;
+       }
+
+   }
+
+   /* --- 3.1 - GigCards Component --- */
+
+   @media screen and (max-width: 767px) {
+
+       .gig-cards h5 {
+           font-size: 18px;
+       }
+
+   }
+
+   @media screen and (max-width: 576px) {}
+
+   /* --- 3.1 - End of GigCards Component --- */
+   /* ---------------------- */
+   /* ------ 3.0 - End of Gig Page ------ */
+   /* ---------------------- */
+
+   /* ------ 4.0 - MyGigs Page ------ */
+
+   @media screen and (max-width: 991px) {
+
+       .my-gigs h1 {
+           font-size: 28px;
+       }
+
+       .my-gigs button {
+           padding: 6px;
+       }
+   }
+
+   @media screen and (max-width: 767px) {
+
+       .my-gigs h1 {
+           font-size: 26px;
+       }
+
+       .my-gigs .delete {
+           width: 15px;
+       }
+
+       .my-gigs th {
+           padding: 20px 10px 20px 0px;
+           font-size: 16px;
+       }
+
+       .my-gigs td {
+           padding: 10px 10px 10px 0px;
+           font-size: 16px;
+       }
+
+       .my-gigs {
+           padding: 30px 0;
+       }
+   }
+
+   @media screen and (max-width: 576px) {
+
+       .my-gigs img {
+           width: 35px;
+       }
+
+       .my-gigs button {
+           padding: 5px;
+       }
+
+       .my-gigs th {
+           padding: 20px 5px 20px 0px;
+       }
+
+       .my-gigs td {
+           padding: 10px 5px 10px 0px;
+       }
+
+       .my-gigs {
+           padding: 20px 0;
+       }
+   }
+
+   /* ------ 4.0 - End of myGigs Page ------ */
+   /* ---------------------- */
+   /* ------ 5.0 - Add New Gig Page ------ */
+
+   @media screen and (max-width: 767px) {
+
+       .add input,
+       textarea,
+       select {
+           padding: 10px;
+       }
+   }
+
+   /* ------ 5.0 - End of Add New Gig Page ------ */
+   /* ---------------------- */
+   /* ------ 6.0 - Orders Page ------ */
+
+   @media screen and (max-width: 991px) {
+
+       .orders h1 {
+           font-size: 28px;
+       }
+
+       .orders button {
+           padding: 6px;
+       }
+   }
+
+   @media screen and (max-width: 767px) {
+
+       .orders h1 {
+           font-size: 26px;
+       }
+
+       .orders .msg {
+           width: 25px;
+       }
+
+       .orders th {
+           padding: 20px 10px 20px 0px;
+           font-size: 16px;
+       }
+
+       .orders td {
+           padding: 10px 10px 10px 0px;
+           font-size: 16px;
+       }
+
+       .orders {
+           padding: 30px 0;
+       }
+   }
+
+   @media screen and (max-width: 576px) {
+
+       .orders img {
+           width: 35px;
+       }
+
+       .orders .msg {
+           width: 20px;
+       }
+
+       .orders button {
+           padding: 5px;
+       }
+
+       .orders th {
+           padding: 20px 5px 20px 0px;
+       }
+
+       .orders td {
+           padding: 10px 5px 10px 0px;
+       }
+
+       .orders {
+           padding: 20px 0;
+       }
+
+   }
+
+   /* ------ 6.0 - End of Orders Page ------ */
+   /* ---------------------- */
+   /* ------ 7.0 - Messages Page ------ */
+
+   @media screen and (max-width: 1399px) {}
+
+   @media screen and (max-width: 1199px) {}
+
+   @media screen and (max-width: 991px) {}
+
+   @media screen and (max-width: 767px) {}
+
+   @media screen and (max-width: 576px) {}
+
+   /* ------ 7.0 - End of Messages Page ------ */
+   /* ---------------------- */
+   /* ------ 8.0 - Message Page ------ */
+
+   @media screen and (max-width: 991px) {
+
+       .message .msgs {
+           height: 800px;
+           overflow: scroll;
+       }
+
+   }
+
+   @media screen and (max-width: 767px) {
+
+       .message .item {
+           max-width: 70%;
+           font-size: 16px;
+       }
+
+       .message .item-owner {
+           max-width: 70%;
+           font-size: 16px;
+
+       }
+
+       .message button {
+           padding: 10px 25px;
+
+       }
+
+       .message p {
+           padding: 10px;
+       }
+   }
+
+   @media screen and (max-width: 576px) {
+
+       .message textarea {
+           width: 100%;
+       }
+
+       .message button {
+           padding: 10px 25px;
+           width: 100%;
+
+       }
+
+       .message .item {
+           max-width: 80%;
+       }
+
+       .message .item-owner {
+           max-width: 80%;
+       }
+   }
+
+   /* ------ 8.0 - End of Message Page ------ */
+   /* ---------------------- */

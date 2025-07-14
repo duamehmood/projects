@@ -1,0 +1,41 @@
+.list-title{
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    margin-left: 50px;
+}
+
+.wrapper .containers{
+    min-width: 50px;
+    width: max-content;
+    transition: all 1s ease;
+
+}
+
+.wrapper{
+    position: relative;
+     overflow: hidden;
+}
+
+.sliderArrow{
+    width: 50px;
+    height: 100%;
+    background-color: rgba(22,22,22,0.5);
+    color: white;
+    position:absolute;
+    z-index: 99;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+    transform: translate(0px);
+}
+
+.left{
+    left: 0;
+}
+
+.right{
+    right: 0;
+}
+
